@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+/*
+Gray:       #3c3c3b
+Darkblue:   #0032a0
+Lightblue:  #0070cd
+Orange:     #ed7700
+ */
+
+body {
+  padding-top: 66px;
+  font-family: 'Lato', sans-serif;
+  color: #3c3c3b;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #0032a0;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
+/*
+footer .social-media a {
+    margin: 0 20px ;
+}
+*/
+
+footer img {
+  max-height: 40px;
+}
+
+.jumbotron {
+  font-family: Montserrat, sans-serif;
+  border-radius: 0;
+  height: 100vh;
+  padding: 0;
+}
+
+.cover-image {
+  background: url(../img/coverimage.jpg) no-repeat fixed right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.headertext {
+  position: absolute;
+  /*top: 67px; TODO: Change after Giveaway */
+  top: 146px;
+  margin: 0;
+  padding: 1.5rem;
+  text-shadow: #000 1px 1px 5px;
+  background: rgba(0, 0, 0, 0.5);
+  width: auto;
+}
+
+.bg-primary {
+  background-color: #0032a0 !important;
+}
+
+.btn-primary {
+  background-color: #0032a0 !important;
+}
+
+.btn-secondary {
+  background-color: #ed7700 !important;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.text-primary {
+  color: #0032a0 !important;
+}
+
+.display-3 {
+  font-size: 55px !important;
+}
+
+.display-4 {
+  font-size: 32px;
+}
+
+.display-5 {
+  font-size: 28px;
+}
+
+.navbar {
+  transition: 0.3s ease;
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.nav-link {
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active {
+  color: #ed7700;
+}
+
+.vertical-align-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.color-blue {
+  color: #0032a0;
+}
+
+.huge {
+  font-size: 200px;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+
+.card-subtitle {
+  color: lightgray;
+}
+
+.card-footer {
+  padding-top: 25px;
+}
+
+.border-lightgray {
+  border-color: #495159 !important;
+}
+
+.screenview {
+  display: none;
+}
+
+.navbar-nav {
+  text-align: center !important;
+}
+
+@media (min-width: 768px) {
+  .headertext {
+    top: 45%;
+    margin: 0 10%;
+  }
+
+  .headertext p {
+    font-size: 1.3rem;
+  }
+
+  .headertext .display-4 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobileview {
+    display: none;
+  }
+
+  .screenview {
+    display: flex;
+  }
+}
+
+.christmas .modal-body {
+  background: url('../img/weihnachtshintergrund.jpg') no-repeat;
+  height: auto;
+  text-shadow: #333333 1px 1px;
+}
+
+.werbung .modal-body {
+  background: url('../img/business-III-2019.png') no-repeat;
+  height: auto;
+  text-shadow: #7a4d99 1px 1px;
+}

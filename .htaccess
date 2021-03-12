@@ -1,0 +1,13 @@
+RewriteEngine On
+# https erzwingen
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+# FRITZ umleitungen:
+RewriteCond %{HTTP_HOST} ^daheim\.vosweb\.info$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.daheim\.vosweb\.info$
+RewriteRule ^/?$ "https\:\/\/uo1gytqd6kgcpjx1\.myfritz\.net" [R=301,L]
+AddType application/octet-stream .pdf
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Diese Domäne übernimmt das Paket „PHP“.
+# php -- END cPanel-generated handler, do not edit
