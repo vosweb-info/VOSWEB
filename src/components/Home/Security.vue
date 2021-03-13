@@ -1,9 +1,9 @@
 <template>
   <b-row>
-    <b-col lg="4">
+    <b-col lg="4" order-lg="2">
       <font-awesome-icon :icon="['fas', 'lock']" size="10x" />
     </b-col>
-    <b-col lg="8">
+    <b-col lg="8" order-lg="1">
       <h2>IT-Sicherheit</h2>
       <p>
         IT-Komponenten Ihrer Firma müssen rund um die Uhr verfügbar sein. Hierfür stellen wir

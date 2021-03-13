@@ -1,9 +1,9 @@
 <template>
   <b-row>
-    <b-col lg="4">
+    <b-col lg="4" order-lg="2">
       <font-awesome-icon :icon="['fas', 'clipboard-check']" size="10x" />
     </b-col>
-    <b-col lg="8">
+    <b-col lg="8" order-lg="1">
       <h2>IT-Lösungen</h2>
       <p>
         Unsere Server-Lösungen sind das Herzstück für Ihr Netzwerk. Ein guter Server sollte schnell

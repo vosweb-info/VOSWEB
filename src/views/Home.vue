@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container id="home">
     <About id="about" />
     <Solutions id="solutions" />
     <Maintenance id="maintenance" />
