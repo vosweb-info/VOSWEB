@@ -1,15 +1,32 @@
-import Vue from 'vue';
-import { BootstrapVue } from 'bootstrap-vue';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUsers } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import '@/app.scss';
 import App from '@/App.vue';
 import router from '@/router';
 import store from '@/store';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faClipboardCheck,
+  faEnvelope,
+  faLock,
+  faPhone,
+  faUsers,
+  faWrench,
+} from '@fortawesome/free-solid-svg-icons';
+import { faMicrosoft, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { BootstrapVue } from 'bootstrap-vue';
+import Vue from 'vue';
 
-import '@/app.scss';
-
-library.add(faUsers);
+library.add(
+  faUsers,
+  faClipboardCheck,
+  faWrench,
+  faLock,
+  faPhone,
+  faEnvelope,
+  faMicrosoft,
+  faLinkedin,
+  faTwitter,
+);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
