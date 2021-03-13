@@ -8,10 +8,10 @@ import './app.scss';
 
 Vue.config.productionTip = false;
 
+Vue.use(BootstrapVue);
+
 new Vue({
   router,
   store,
   render: (h) => h(App),
 }).$mount('#app');
-
-Vue.use(BootstrapVue);
