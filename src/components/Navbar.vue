@@ -14,7 +14,7 @@
             <b-nav-item href="#solutions">IT-Lösungen</b-nav-item>
             <b-nav-item href="#maintenance">Administration/Wartung</b-nav-item>
             <b-nav-item href="#security">IT-Sicherheit</b-nav-item>
-            <b-nav-item href="#o365">Office365-Integration</b-nav-item>
+            <b-nav-item href="#office365">Office365-Integration</b-nav-item>
             <b-nav-item href="#hosting">Hosting/Webdesign</b-nav-item>
             <b-nav-item href="#contact">Kontakt</b-nav-item>
           </b-navbar-nav>
