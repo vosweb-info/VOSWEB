@@ -1,22 +1,22 @@
 <template>
   <footer class="bg-dark text-white">
-    <b-container>
-      <b-row>
-        <b-col>
+    <b-container class="pt-3">
+      <b-row class="text-center">
+        <b-col lg md="6">
           <img
             src="@/assets/images/vosweb-logo-white.png"
             style="max-height: 40px"
           />
-          <div>
-            <a href="https://twitter.com/voswebde" target="_blank">
+          <div class="py-3">
+            <a href="https://twitter.com/voswebde" target="_blank" class="mx-2">
               <font-awesome-icon :icon="['fab', 'twitter']" />
             </a>
-            <a href="https://www.linkedin.com/in/vosweb" target="_blank">
+            <a href="https://www.linkedin.com/in/vosweb" target="_blank" class="mx-2">
               <font-awesome-icon :icon="['fab', 'linkedin']" />
             </a>
           </div>
         </b-col>
-        <b-col>
+        <b-col lg md="6">
           <p><strong>Adresse:</strong></p>
           <p>
             Gaisthalerhammer 6<br />
@@ -24,16 +24,16 @@
             <i>(kein Ladengeschäft)</i>
           </p>
         </b-col>
-        <b-col>
+        <b-col lg md="6">
           <p><strong>Kontakt:</strong></p>
           <p>
-            <font-awesome-icon :icon="['fas', 'phone']" />
+            <font-awesome-icon :icon="['fas', 'phone']" class="mr-1"/>
             0 96 74 / 68 30 171<br />
-            <font-awesome-icon :icon="['fas', 'envelope']" />
+            <font-awesome-icon :icon="['fas', 'envelope']" class="mr-1"/>
             mail@vosweb.de<br />
           </p>
         </b-col>
-        <b-col>
+        <b-col lg md="6">
           <p><strong>Links:</strong></p>
           <p>
             <b-link to="/impressum">Impressum</b-link><br />
@@ -47,16 +47,29 @@
               target="_blank"
               style="pointer-events: none"
             >
-              AGB <b-badge style="secondary">PDF, 995KB</b-badge>
+              AGB <b-badge variant="light">PDF, 995KB</b-badge>
             </a>
           </p>
         </b-col>
       </b-row>
       <b-row>
-        <b-col class="border-top border-light">
-          &copy; Volker Schierenberg VOSWEB, 2020
+        <b-col class="border-top border-light pt-4 mt-4 text-center">
+          &copy; Volker Schierenberg VOSWEB, {{ new Date().getFullYear() }}
         </b-col>
       </b-row>
     </b-container>
   </footer>
 </template>
+
+<style lang="scss" scoped>
+.svg-inline--fa {
+  color: white;
+}
+
+a {
+  color: white;
+  &:hover {
+    color: darken(white, 15%);
+  }
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-light">
-    <b-container class="bg-white">
+  <section class="bg-light">
+    <b-container class="bg-white p-4">
       <h1>Impressum</h1>
       <p>
         Angaben gemäß § 5 TMG:<br />
@@ -296,5 +296,5 @@
         </em>
       </p>
     </b-container>
-  </div>
+  </section>
 </template>

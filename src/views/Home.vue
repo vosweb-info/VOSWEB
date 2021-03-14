@@ -1,5 +1,5 @@
 <template>
-  <b-container id="home">
+  <div id="home">
     <About id="about" />
     <Solutions id="solutions" />
     <Maintenance id="maintenance" />
@@ -7,7 +7,7 @@
     <Office365 id="office365" />
     <Hosting id="hosting" />
     <Contact id="contact" />
-  </b-container>
+  </div>
 </template>
 
 <script lang="ts">

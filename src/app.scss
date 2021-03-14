@@ -1,2 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat");
+@import "node_modules/bootstrap/scss/functions";
+
+$theme-colors: (
+  "primary": #0032a0,
+  "secondary": #ed7700,
+);
+
+$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+
+$headings-color: theme-color("primary");
+$navbar-light-hover-color: theme-color("secondary");
+$navbar-light-active-color: theme-color("secondary");
+
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "node_modules/bootstrap-vue/src/index.scss";
+
+section, footer {
+  padding: 50px 0;
+}
+
+.svg-inline--fa {
+  color: theme-color("primary");
+}
