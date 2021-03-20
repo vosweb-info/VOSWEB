@@ -15,8 +15,8 @@
       </p>
       <h3 id="dsg-general-controller">Verantwortlicher</h3>
       <p>
-        <span class="tsmcontroller"
-          >Volker Schierenberg<br />
+        <span class="tsmcontroller">
+          Volker Schierenberg<br />
           VOSWEB-Internetdienstleistung<br />
           Gaisthalerhammer 6<br />
           92539 Sch&ouml;nsee<br />
@@ -24,8 +24,8 @@
           <br />
           E-Mail: mail@vosweb.de<br />
           Umsatzsteuer-ID gem&auml;&szlig; §27 a Umsatzsteuergesetz:<br />
-          DE277525769</span
-        >
+          DE277525769
+        </span>
       </p>
       <h3 id="dsg-general-datatype">Arten der verarbeiteten Daten:</h3>
       <p>
@@ -254,13 +254,13 @@
         Onlinemarketing eingesetzten Cookies kann bei einer Vielzahl der
         Dienste, vor allem im Fall des Trackings, &uuml;ber die US-amerikanische
         Seite
-        <a href="http://www.aboutads.info/choices/"
-          >http://www.aboutads.info/choices/</a
-        >
+        <a href="http://www.aboutads.info/choices/">
+          http://www.aboutads.info/choices/
+        </a>
         oder die EU-Seite
-        <a href="http://www.youronlinechoices.com/"
-          >http://www.youronlinechoices.com/</a
-        >
+        <a href="http://www.youronlinechoices.com/">
+          http://www.youronlinechoices.com/
+        </a>
         erkl&auml;rt werden. Des Weiteren kann die Speicherung von Cookies
         mittels deren Abschaltung in den Einstellungen des Browsers erreicht
         werden. Bitte beachten Sie, dass dann gegebenenfalls nicht alle
@@ -303,15 +303,15 @@
       <h3 id="dsg-commercialpurpose">Gesch&auml;ftsbezogene Verarbeitung</h3>
       <p></p>
       <p>
-        <span class="ts-muster-content"
-          >Zus&auml;tzlich verarbeiten wir<br />
+        <span class="ts-muster-content">
+          Zus&auml;tzlich verarbeiten wir<br />
           - Vertragsdaten (z.B., Vertragsgegenstand, Laufzeit,
           Kundenkategorie).<br />
           - Zahlungsdaten (z.B., Bankverbindung, Zahlungshistorie)<br />
           von unseren Kunden, Interessenten und Gesch&auml;ftspartner zwecks
           Erbringung vertraglicher Leistungen, Service und Kundenpflege,
-          Marketing, Werbung und Marktforschung.</span
-        >
+          Marketing, Werbung und Marktforschung.
+        </span>
       </p>
       <p></p>
       <h3 id="dsg-services-onlineshop">
@@ -319,8 +319,8 @@
       </h3>
       <p></p>
       <p>
-        <span class="ts-muster-content"
-          >Wir verarbeiten die Daten unserer Kunden im Rahmen der
+        <span class="ts-muster-content">
+          Wir verarbeiten die Daten unserer Kunden im Rahmen der
           Bestellvorg&auml;nge in unserem Onlineshop, um ihnen die Auswahl und
           die Bestellung der gew&auml;hlten Produkte und Leistungen, sowie deren
           Bezahlung und Zustellung, bzw. Ausf&uuml;hrung zu erm&ouml;glichen.<br />
@@ -374,16 +374,15 @@
           Erforderlichkeit der Aufbewahrung der Daten wird alle drei Jahre
           &uuml;berpr&uuml;ft; im Fall der gesetzlichen Archivierungspflichten
           erfolgt die L&ouml;schung nach deren Ablauf (Ende handelsrechtlicher
-          (6 Jahre) und steuerrechtlicher (10 Jahre)
-          Aufbewahrungspflicht).</span
-        >
+          (6 Jahre) und steuerrechtlicher (10 Jahre) Aufbewahrungspflicht).
+        </span>
       </p>
       <p></p>
       <h3 id="dsg-services-agency">Agenturdienstleistungen</h3>
       <p></p>
       <p>
-        <span class="ts-muster-content"
-          >Wir verarbeiten die Daten unserer Kunden im Rahmen unserer
+        <span class="ts-muster-content">
+          Wir verarbeiten die Daten unserer Kunden im Rahmen unserer
           vertraglichen Leistungen zu denen konzeptionelle und strategische
           Beratung, Kampagnenplanung, Software- und Designentwicklung/-beratung
           oder Pflege, Umsetzung von Kampagnen und Prozessen/ Handling,
@@ -423,16 +422,15 @@
           HGB, 10 J, gem. § 147 Abs. 1 AO). Im Fall von Daten, die uns
           gegen&uuml;ber im Rahmen eines Auftrags durch den Auftraggeber
           offengelegt wurden, l&ouml;schen wir die Daten entsprechend den
-          Vorgaben des Auftrags, grunds&auml;tzlich nach Ende des
-          Auftrags.</span
-        >
+          Vorgaben des Auftrags, grunds&auml;tzlich nach Ende des Auftrags.
+        </span>
       </p>
       <p></p>
       <h3 id="dsg-hostingprovider">Hosting und E-Mail-Versand,</h3>
       <p></p>
       <p>
-        <span class="ts-muster-content"
-          >Die von uns in Anspruch genommenen Hosting-Leistungen dienen der
+        <span class="ts-muster-content">
+          Die von uns in Anspruch genommenen Hosting-Leistungen dienen der
           Zurverf&uuml;gungstellung der folgenden Leistungen: Infrastruktur- und
           Plattformdienstleistungen, Rechenkapazit&auml;t, Speicherplatz und
           Datenbankdienste, E-Mail-Versand, Sicherheitsleistungen sowie
@@ -445,15 +443,15 @@
           Onlineangebotes auf Grundlage unserer berechtigten Interessen an einer
           effizienten und sicheren Zurverf&uuml;gungstellung dieses
           Onlineangebotes gem. Art. 6 Abs. 1 lit. f DSGVO i.V.m. Art. 28 DSGVO
-          (Abschluss Auftragsverarbeitungsvertrag).</span
-        >
+          (Abschluss Auftragsverarbeitungsvertrag).
+        </span>
       </p>
       <p></p>
       <h3 id="dsg-logfiles">Erhebung von Zugriffsdaten und Logfiles</h3>
       <p></p>
       <p>
-        <span class="ts-muster-content"
-          >Wir, bzw. unser Hostinganbieter, erhebt auf Grundlage unserer
+        <span class="ts-muster-content">
+          Wir, bzw. unser Hostinganbieter, erhebt auf Grundlage unserer
           berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO Daten
           &uuml;ber jeden Zugriff auf den Server, auf dem sich dieser Dienst
           befindet (sogenannte Serverlogfiles). Zu den Zugriffsdaten
@@ -468,8 +466,8 @@
           Dauer von maximal 7 Tagen gespeichert und danach gel&ouml;scht. Daten,
           deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis
           zur endg&uuml;ltigen Kl&auml;rung des jeweiligen Vorfalls von der
-          L&ouml;schung ausgenommen.</span
-        >
+          L&ouml;schung ausgenommen.
+        </span>
       </p>
       <p>
         <a
@@ -477,8 +475,9 @@
           href="https://datenschutz-generator.de"
           rel="nofollow"
           target="_blank"
-          >Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a
         >
+          Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke
+        </a>
       </p>
     </b-container>
   </section>
