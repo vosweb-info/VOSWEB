@@ -4,7 +4,7 @@
       <b-row class="text-center">
         <b-col lg md="6">
           <img
-            src="@/assets/images/vosweb-logo-white.png"
+            src="@/assets/images/vosweb-logo-white.webp"
             style="max-height: 40px"
           />
           <div class="py-3">
