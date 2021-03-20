@@ -1,5 +1,6 @@
 <template>
   <div id="home">
+    <Cover id="cover" />
     <About id="about" />
     <Solutions id="solutions" />
     <Maintenance id="maintenance" />
@@ -13,6 +14,7 @@
 <script lang="ts">
 import About from '@/components/Home/About.vue';
 import Contact from '@/components/Home/Contact.vue';
+import Cover from '@/components/Cover.vue';
 import Hosting from '@/components/Home/Hosting.vue';
 import Maintenance from '@/components/Home/Maintenance.vue';
 import Office365 from '@/components/Home/Office365.vue';
@@ -24,6 +26,7 @@ import { Component, Vue } from 'vue-property-decorator';
   components: {
     About,
     Contact,
+    Cover,
     Hosting,
     Maintenance,
     Office365,
