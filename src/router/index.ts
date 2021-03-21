@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '@/views/Home.vue';
 import LegalNotice from '@/views/LegalNotice.vue';
 import PrivacyPolicy from '@/views/PrivacyPolicy.vue';
+import NotFound from '@/views/404.vue';
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes: Array<RouteConfig> = [
     path: '/datenschutz',
     name: 'Datenschutz',
     component: PrivacyPolicy,
+  },
+  {
+    path: '*',
+    name: '404',
+    component: NotFound,
   },
 ];
 
