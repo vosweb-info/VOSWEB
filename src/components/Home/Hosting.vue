@@ -19,14 +19,14 @@
       </p>
       <p><strong>Hier eine Auswahl unserer Pakete:</strong></p>
       <b-row class="my-4">
-        <b-col md="4">
-          <Web1 />
+        <b-col md="4" class="pb-3 pb-md-0" align-self="center">
+          <WebPackages :webPackage="hostingPackages[0]" />
         </b-col>
-        <b-col md="4">
-          <Web2 />
+        <b-col md="4" class="pb-3 pb-md-0" align-self="center">
+          <WebPackages :webPackage="hostingPackages[1]" />
         </b-col>
-        <b-col md="4">
-          <Web3 />
+        <b-col md="4" align-self="center">
+          <WebPackages :webPackage="hostingPackages[2]" />
         </b-col>
       </b-row>
       <p>
@@ -56,16 +56,61 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Web1 from '@/components/Home/Hosting.Web1.vue';
-import Web2 from '@/components/Home/Hosting.Web2.vue';
-import Web3 from '@/components/Home/Hosting.Web3.vue';
+import WebPackages from '@/components/WebPackages.vue';
 
 @Component({
   components: {
-    Web1,
-    Web2,
-    Web3,
+    WebPackages,
   },
 })
-export default class Hosting extends Vue {}
+export default class Hosting extends Vue {
+  hostingPackages = [
+    {
+      title: 'WEB-Paket 1/1000',
+      name: 'Web-Privat',
+      price: '2,49',
+      services: [
+        'inkl. eine .de Domain',
+        '5 Subdomains',
+        '5 GB Traffic',
+        'Webspace: 1000 MB',
+        '5 Emailadressen',
+        'Postfachgröße: bis 1 GB',
+        '1 MySQL Datenbank',
+        'Zugriff auf Vosweb-Webserver',
+      ],
+    },
+    {
+      title: 'WEB-Paket 5',
+      name: 'Web-Power',
+      price: '6,49',
+      services: [
+        'inkl. zwei .de Domains oder eine .com/.net/.org/.at/.biz./.info/.eu',
+        '20 Subdomains',
+        '10 FTP Konten',
+        '15 GB Traffic',
+        'Webspace: 5000MB',
+        '15 Emailadressen',
+        'Postfachgröße: 5 GB',
+        '5 MySQL Datenbanken',
+        'Zugriff auf Vosweb-Webserver',
+      ],
+    },
+    {
+      title: 'WEB-Paket 1/2000',
+      name: 'Web-PRO',
+      price: '4,49',
+      services: [
+        'inkl. eine .de Domain',
+        '10 Subdomains',
+        '10 GB Traffic',
+        'Webspace: 2000MB',
+        '5 Emailadressen',
+        'Postfachgröße: bis 2 GB',
+        '2 MySQL Datenbanken',
+        'Zugriff auf Vosweb-Webserver',
+      ],
+    },
+  ];
+}
 </script>
