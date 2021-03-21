@@ -15,6 +15,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { BootstrapVue } from 'bootstrap-vue';
 import Vue from 'vue';
 import TrustpilotPlugin from 'vue-trustpilot';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
 
 library.add(
   faUsers,
@@ -28,12 +30,6 @@ library.add(
   faTwitter,
 );
 
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-
-Vue.config.productionTip = false;
-
-Vue.use(BootstrapVue);
-
 const trustPilotOptions = {
   widgets: {
     list: {
@@ -46,7 +42,13 @@ const trustPilotOptions = {
   },
 };
 
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+Vue.config.productionTip = false;
+
+Vue.use(BootstrapVue);
 Vue.use(TrustpilotPlugin, trustPilotOptions);
+Vue.use(VueAxios, axios);
 
 new Vue({
   router,
