@@ -1,7 +1,6 @@
 import '@/app.scss';
 import App from '@/App.vue';
 import router from '@/router';
-import store from '@/store';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedin, faMicrosoft, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -51,6 +50,5 @@ Vue.use(TrustpilotPlugin, trustPilotOptions);
 
 new Vue({
   router,
-  store,
   render: (h) => h(App),
 }).$mount('#app');
