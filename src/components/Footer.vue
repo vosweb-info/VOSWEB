@@ -4,7 +4,7 @@
       <b-row class="text-center">
         <b-col lg md="6">
           <img
-            src="@/assets/images/vosweb-logo-white.webp"
+            src="@/assets/vosweb-logo-white.webp"
             style="max-height: 40px"
           />
           <div class="py-3">
@@ -47,9 +47,8 @@
             </a>
             <br />
             <a
-              href="@/assets/docs/Dienstleistungs-AGB_vosweb.pdf"
+              href="/docs/Dienstleistungs-AGB_vosweb.pdf"
               target="_blank"
-              style="pointer-events: none"
             >
               AGB <b-badge variant="light">PDF, 995KB</b-badge>
             </a>

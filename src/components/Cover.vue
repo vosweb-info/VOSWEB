@@ -25,7 +25,7 @@
 @import '~bootstrap/scss/variables';
 
 .cover-image {
-  background: url("../assets/images/coverimage.webp") no-repeat fixed right;
+  background: url("../assets/coverimage.webp") no-repeat fixed right;
   background-size: cover;
   min-height: 50vh;
   padding-top: 150px;

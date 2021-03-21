@@ -9,7 +9,7 @@
   >
     <b-container>
       <b-navbar-brand to="/">
-        <img src="@/assets/images/vosweb-logo.webp" alt="logo" height="30" />
+        <img src="@/assets/vosweb-logo.webp" alt="logo" height="30" />
       </b-navbar-brand>
 
       <div v-if="['Home'].includes($route.name)">
