@@ -3,6 +3,7 @@ import App from '@/App.vue';
 import router from '@/router';
 import store from '@/store';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faLinkedin, faMicrosoft, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
   faClipboardCheck,
   faEnvelope,
@@ -11,10 +12,10 @@ import {
   faUsers,
   faWrench,
 } from '@fortawesome/free-solid-svg-icons';
-import { faMicrosoft, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { BootstrapVue } from 'bootstrap-vue';
 import Vue from 'vue';
+import TrustpilotPlugin from 'vue-trustpilot';
 
 library.add(
   faUsers,
@@ -33,6 +34,20 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
+
+const trustPilotOptions = {
+  widgets: {
+    list: {
+      templateId: '5419b6a8b0d04a076446a9ad',
+      businessunitId: '541be86d00006400057a6acd',
+      reviewUrl: 'https://de.trustpilot.com/review/www.vosweb.de',
+      locale: 'de-DE',
+      theme: 'dark',
+    },
+  },
+};
+
+Vue.use(TrustpilotPlugin, trustPilotOptions);
 
 new Vue({
   router,

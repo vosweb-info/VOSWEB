@@ -11,7 +11,11 @@
             <a href="https://twitter.com/voswebde" target="_blank" class="mx-2">
               <font-awesome-icon :icon="['fab', 'twitter']" />
             </a>
-            <a href="https://www.linkedin.com/in/vosweb" target="_blank" class="mx-2">
+            <a
+              href="https://www.linkedin.com/in/vosweb"
+              target="_blank"
+              class="mx-2"
+            >
               <font-awesome-icon :icon="['fab', 'linkedin']" />
             </a>
           </div>
@@ -27,9 +31,9 @@
         <b-col lg md="6">
           <p><strong>Kontakt:</strong></p>
           <p>
-            <font-awesome-icon :icon="['fas', 'phone']" class="mr-1"/>
+            <font-awesome-icon :icon="['fas', 'phone']" class="mr-1" />
             0 96 74 / 68 30 171<br />
-            <font-awesome-icon :icon="['fas', 'envelope']" class="mr-1"/>
+            <font-awesome-icon :icon="['fas', 'envelope']" class="mr-1" />
             mail@vosweb.de<br />
           </p>
         </b-col>
@@ -57,9 +61,22 @@
           &copy; Volker Schierenberg VOSWEB, {{ new Date().getFullYear() }}
         </b-col>
       </b-row>
+      <Reviews />
     </b-container>
   </footer>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import Reviews from '@/components/Reviews.vue';
+
+@Component({
+  components: {
+    Reviews,
+  },
+})
+export default class Footer extends Vue {}
+</script>
 
 <style lang="scss" scoped>
 .svg-inline--fa {
