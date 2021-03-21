@@ -3,10 +3,12 @@
     <Navbar />
     <router-view />
     <Footer />
+    <Cookies />
   </div>
 </template>
 
 <script lang="ts">
+import Cookies from '@/components/Cookies.vue';
 import Footer from '@/components/Footer.vue';
 import Navbar from '@/components/Navbar.vue';
 import { Component, Vue } from 'vue-property-decorator';
@@ -15,6 +17,7 @@ import { Component, Vue } from 'vue-property-decorator';
   components: {
     Navbar,
     Footer,
+    Cookies,
   },
 })
 export default class App extends Vue {}
