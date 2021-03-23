@@ -18,7 +18,8 @@
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "noImplicitAny": false,
-    "allowJs": true
+    "allowJs": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*.ts",

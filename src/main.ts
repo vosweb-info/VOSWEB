@@ -17,6 +17,7 @@ import Vue from 'vue';
 import TrustpilotPlugin from 'vue-trustpilot';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
+import sitekeys from '@/config/sitekeys.json';
 
 library.add(
   faUsers,
@@ -30,11 +31,13 @@ library.add(
   faTwitter,
 );
 
+const { trustpilot } = sitekeys;
+
 const trustPilotOptions = {
   widgets: {
     list: {
-      templateId: '5419b6a8b0d04a076446a9ad',
-      businessunitId: '541be86d00006400057a6acd',
+      templateId: trustpilot.templateId,
+      businessunitId: trustpilot.businessunitId,
       reviewUrl: 'https://de.trustpilot.com/review/www.vosweb.de',
       locale: 'de-DE',
       theme: 'dark',

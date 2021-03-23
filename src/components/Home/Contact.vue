@@ -68,6 +68,9 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import VueRecaptcha from 'vue-recaptcha';
+import sitekeys from '@/config/sitekeys.json';
+
+const { google } = sitekeys;
 
 @Component({
   components: {
@@ -75,7 +78,7 @@ import VueRecaptcha from 'vue-recaptcha';
   },
 })
 export default class Contact extends Vue {
-  sitekey = process.env.GOOGLE_SITEKEY;
+  sitekey = google.sitekey;
 
   form = { isHuman: false };
 
@@ -83,12 +86,6 @@ export default class Contact extends Vue {
 
   submit() {
     if (this.error) this.error = true;
-    else {
-      this.axios
-        .post('/contact.php', {})
-        .then((response: any) => console.log(response))
-        .catch((response: any) => console.error(response));
-    }
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
