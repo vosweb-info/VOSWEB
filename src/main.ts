@@ -1,5 +1,6 @@
 import '@/app.scss';
 import App from '@/App.vue';
+import sitekeys from '@/config/sitekeys.json';
 import router from '@/router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedin, faMicrosoft, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -12,12 +13,26 @@ import {
   faWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { BootstrapVue } from 'bootstrap-vue';
-import Vue from 'vue';
-import TrustpilotPlugin from 'vue-trustpilot';
 import axios from 'axios';
+import {
+  AlertPlugin,
+  BadgePlugin,
+  ButtonPlugin,
+  CardPlugin,
+  FormGroupPlugin,
+  FormInputPlugin,
+  FormPlugin,
+  FormTextareaPlugin,
+  LayoutPlugin,
+  LinkPlugin,
+  NavPlugin,
+  NavbarPlugin,
+  ProgressPlugin,
+  VBScrollspyPlugin,
+} from 'bootstrap-vue';
+import Vue from 'vue';
 import VueAxios from 'vue-axios';
-import sitekeys from '@/config/sitekeys.json';
+import TrustpilotPlugin from 'vue-trustpilot';
 
 library.add(
   faUsers,
@@ -49,8 +64,25 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.config.productionTip = false;
 
-Vue.use(BootstrapVue);
+[
+  AlertPlugin,
+  BadgePlugin,
+  ButtonPlugin,
+  CardPlugin,
+  FormGroupPlugin,
+  FormInputPlugin,
+  FormPlugin,
+  FormTextareaPlugin,
+  LayoutPlugin,
+  LinkPlugin,
+  NavPlugin,
+  NavbarPlugin,
+  ProgressPlugin,
+  VBScrollspyPlugin,
+].forEach((plugin) => Vue.use(plugin));
+
 Vue.use(TrustpilotPlugin, trustPilotOptions);
+
 Vue.use(VueAxios, axios);
 
 new Vue({

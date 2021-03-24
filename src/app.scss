@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat");
-@import "node_modules/bootstrap/scss/functions";
+@import "~bootstrap/scss/functions";
+
+
 
 $theme-colors: (
   "primary": #0032a0,
@@ -14,17 +16,18 @@ $headings-color: theme-color("primary");
 $navbar-light-hover-color: theme-color("secondary");
 $navbar-light-active-color: theme-color("secondary");
 
-@import "node_modules/bootstrap/scss/bootstrap.scss";
-@import "node_modules/bootstrap-vue/src/index.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-vue/src/index.scss";
 
 #app {
   min-height: 100vh;
   height: 100%;
-  display:flex; 
-  flex-direction:column; 
+  display: flex;
+  flex-direction: column;
 }
 
-section, footer {
+section,
+footer {
   padding: 50px 0;
 }
 
