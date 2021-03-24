@@ -41,7 +41,7 @@ jobs:
       - name: Deploy to Server
         uses: burnett01/rsync-deployments@4.1
         with:
-          switches: -rltgoDzvO --delete --exclude="cgi-bin/" --exclude=".htaccess" --exclude=".htpasswds" --exclude="docs/" --exclude=".well-known"
+          switches: -rltgoDzvO --delete --exclude=".htaccess" --exclude=".well-known" --exclude=".htpasswds/" --exclude="cgi-bin/" --exclude="docs/"
           path: dist/
           remote_path: ${{ secrets.SSH_DEV_DIR }}
           remote_host: ${{ secrets.SSH_HOST }}
