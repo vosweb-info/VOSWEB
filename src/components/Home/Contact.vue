@@ -5,13 +5,22 @@
       <b-form :model="form" @submit.prevent="submit" ref="contactForm">
         <b-row>
           <b-form-group class="col">
-            <b-form-input type="text" placeholder="Name" id="name" required />
+            <b-form-input
+              type="text"
+              placeholder="Name"
+              id="name"
+              v-model="form.name"
+              minlength="3"
+              required
+            />
           </b-form-group>
           <b-form-group class="col">
             <b-form-input
               type="email"
               placeholder="Email"
               id="email"
+              v-model="form.email"
+              minlength="3"
               required
             />
           </b-form-group>
@@ -22,6 +31,8 @@
               type="text"
               placeholder="Betreff"
               id="subject"
+              v-model="form.subject"
+              minlength="3"
               required
             />
           </b-form-group>
@@ -29,7 +40,9 @@
             <b-form-input
               type="text"
               placeholder="Telefonnummer"
-              id="number"
+              id="phone"
+              v-model="form.phone"
+              minlength="3"
               required
             />
           </b-form-group>
@@ -40,9 +53,32 @@
               placeholder="Ihre Nachricht"
               rows="5"
               id="message"
+              v-model="form.message"
               required
             />
           </b-form-group>
+        </b-row>
+        <b-row>
+          <b-col>
+            <b-alert :show="error.length" variant="danger">
+              {{ error }}
+            </b-alert>
+            <b-alert
+              :show="success"
+              variant="success"
+              dismissible
+              @dismissed="success = 0"
+              @dismiss-count-down="successCountDown"
+            >
+              Vielen Dank für Ihre Nachricht!
+              <b-progress
+                variant="success"
+                :max="successSecs"
+                :value="success"
+                height="2px"
+              />
+            </b-alert>
+          </b-col>
         </b-row>
         <b-row>
           <b-form-group class="col text-left">
@@ -52,9 +88,6 @@
               loadRecaptchaScript
               @verify="onVerify"
             />
-            <p v-if="error" class="text-danger">
-              Bitte bestätigen Sie das reCaptcha!
-            </p>
           </b-form-group>
           <b-form-group class="col text-right">
             <b-button type="submit" variant="secondary">Senden</b-button>
@@ -70,7 +103,11 @@ import { Component, Vue } from 'vue-property-decorator';
 import VueRecaptcha from 'vue-recaptcha';
 import sitekeys from '@/config/sitekeys.json';
 
+const { NODE_ENV, BASE_URL } = process.env;
 const { google } = sitekeys;
+
+const url = NODE_ENV === 'production' ? BASE_URL : 'http://localhost:3000';
+let verification: string;
 
 @Component({
   components: {
@@ -80,17 +117,68 @@ const { google } = sitekeys;
 export default class Contact extends Vue {
   sitekey = google.sitekey;
 
-  form = { isHuman: false };
+  form = {
+    isHuman: false,
+    name: '',
+    email: '',
+    phone: null,
+    subject: '',
+    message: '',
+  };
 
-  error = false;
+  error = '';
 
-  submit() {
-    if (this.error) this.error = true;
+  success = 0;
+
+  successSecs = 5;
+
+  successAlert = false;
+
+  successCountDown(countDown: number) {
+    this.success = countDown;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  onVerify(response: any) {
-    if (response) this.form.isHuman = true;
+  submit() {
+    if (!this.form.isHuman) this.error = 'Bitte bestätigen Sie das reCaptcha!';
+    else {
+      this.axios
+        .post(`${url}/api/v1/mail`, {
+          name: this.form.name,
+          email: this.form.email,
+          phone: this.form.phone,
+          subject: this.form.subject,
+          message: this.form.message.replace(/(?:\r\n|\r|\n)/g, '<br />'),
+          verification,
+        })
+        .then(() => {
+          this.error = '';
+          this.successAlert = true;
+          this.success = this.successSecs;
+          this.form = {
+            isHuman: false,
+            name: '',
+            email: '',
+            phone: null,
+            subject: '',
+            message: '',
+          };
+          (this.$refs.recaptcha as VueRecaptcha).reset();
+        })
+        .catch(() => {
+          this.error = 'Ein Fehler ist aufgetreten, bitte versuchen Sie es später erneut';
+        });
+    }
+  }
+
+  onVerify(response: string) {
+    if (response) {
+      this.form.isHuman = true;
+      this.error = '';
+      verification = response;
+    } else {
+      this.form.isHuman = false;
+      this.error = 'Ein Fehler ist aufgetreten, bitte versuchen Sie es später erneut';
+    }
   }
 }
 </script>
