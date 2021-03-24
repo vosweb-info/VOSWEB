@@ -1,13 +1,13 @@
 <template>
   <div id="home">
-    <Cover id="cover" />
-    <About id="about" />
-    <Solutions id="solutions" />
-    <Maintenance id="maintenance" />
-    <Security id="security" />
-    <Office365 id="office365" />
-    <Hosting id="hosting" />
-    <Contact id="contact" />
+    <cover id="cover" />
+    <about id="about" />
+    <solutions id="solutions" />
+    <maintenance id="maintenance" />
+    <security id="security" />
+    <office-365 id="office365" />
+    <hosting id="hosting" />
+    <contact id="contact" />
   </div>
 </template>
 

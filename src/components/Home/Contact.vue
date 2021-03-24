@@ -82,7 +82,7 @@
         </b-row>
         <b-row>
           <b-form-group class="col text-left">
-            <VueRecaptcha
+            <vue-recaptcha
               ref="recaptcha"
               :sitekey="sitekey"
               loadRecaptchaScript

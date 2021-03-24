@@ -1,5 +1,5 @@
 <template>
-  <CookieLaw
+  <cookie-law
     buttonText="Ok, verstanden"
     buttonClass="btn btn-primary text-nowrap"
   >
@@ -10,7 +10,7 @@
       Cookies erhalten Sie in unseren
       <router-link to="/datenschutz">Datenschutzbestimmungen</router-link>
     </div>
-  </CookieLaw>
+  </cookie-law>
 </template>
 
 <script lang="ts">

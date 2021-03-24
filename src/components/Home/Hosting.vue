@@ -20,13 +20,13 @@
       <p><strong>Hier eine Auswahl unserer Pakete:</strong></p>
       <b-row class="my-4">
         <b-col md="4" class="pb-3 pb-md-0" align-self="center">
-          <WebPackages :webPackage="hostingPackages[0]" />
+          <web-packages :webPackage="hostingPackages[0]" />
         </b-col>
         <b-col md="4" class="pb-3 pb-md-0" align-self="center">
-          <WebPackages :webPackage="hostingPackages[1]" />
+          <web-packages :webPackage="hostingPackages[1]" />
         </b-col>
         <b-col md="4" align-self="center">
-          <WebPackages :webPackage="hostingPackages[2]" />
+          <web-packages :webPackage="hostingPackages[2]" />
         </b-col>
       </b-row>
       <p>

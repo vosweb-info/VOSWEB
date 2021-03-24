@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <Navbar />
+    <navbar />
     <router-view />
-    <Footer />
-    <Cookies />
+    <custom-footer />
+    <cookies />
   </div>
 </template>
 
@@ -16,7 +16,7 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component({
   components: {
     Navbar,
-    Footer,
+    'custom-footer': Footer,
     Cookies,
   },
 })
