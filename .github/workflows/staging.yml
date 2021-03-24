@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -30,8 +28,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -45,7 +41,7 @@ jobs:
       - name: Deploy to Server
         uses: burnett01/rsync-deployments@4.1
         with:
-          switches: -rltgoDzvO --delete --exclude="cgi-bin/" --exclude=".htaccess" --exclude="docs/" --exclude=".well-known"
+          switches: -rltgoDzvO --delete --exclude="cgi-bin/" --exclude=".htaccess" --exclude=".htpasswds" --exclude="docs/" --exclude=".well-known"
           path: dist/
           remote_path: ${{ secrets.SSH_DEV_DIR }}
           remote_host: ${{ secrets.SSH_HOST }}
