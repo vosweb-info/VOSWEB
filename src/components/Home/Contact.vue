@@ -106,7 +106,7 @@ import sitekeys from '@/config/sitekeys.json';
 const { NODE_ENV } = process.env;
 const { google } = sitekeys;
 
-const url = NODE_ENV === 'production' ? window.location.host : 'http://localhost:3000';
+const url = NODE_ENV === 'production' ? '' : 'http://localhost:3000';
 let verification: string;
 
 @Component({
