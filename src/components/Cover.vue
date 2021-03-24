@@ -40,4 +40,8 @@
   background: rgba(0, 0, 0, 0.5);
   width: fit-content;
 }
+
+.display-5 {
+  font-size: 2rem;
+}
 </style>

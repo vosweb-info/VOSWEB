@@ -12,11 +12,11 @@
         <img src="@/assets/vosweb-logo.webp" alt="logo" height="40" />
       </b-navbar-brand>
 
-      <div v-if="['Home'].includes($route.name)">
+      <template v-if="['Home'].includes($route.name)">
         <b-navbar-toggle target="nav-collapse" />
 
         <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav>
+          <b-navbar-nav class="ml-auto">
             <b-nav-item to="#about"> Über uns </b-nav-item>
             <b-nav-item to="#solutions">IT-Lösungen</b-nav-item>
             <b-nav-item to="#maintenance"> Administration/Wartung </b-nav-item>
@@ -26,7 +26,7 @@
             <b-nav-item to="#contact"> Kontakt </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
-      </div>
+      </template>
     </b-container>
   </b-navbar>
 </template>
