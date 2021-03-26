@@ -4,7 +4,7 @@
       <h2>Kontakt</h2>
       <b-form :model="form" @submit.prevent="submit" ref="contactForm">
         <b-row>
-          <b-form-group class="col">
+          <b-form-group class="col-sm">
             <b-form-input
               type="text"
               placeholder="Name"
@@ -14,7 +14,7 @@
               required
             />
           </b-form-group>
-          <b-form-group class="col">
+          <b-form-group class="col-sm">
             <b-form-input
               type="email"
               placeholder="Email"
@@ -26,7 +26,7 @@
           </b-form-group>
         </b-row>
         <b-row>
-          <b-form-group class="col">
+          <b-form-group class="col-sm">
             <b-form-input
               type="text"
               placeholder="Betreff"
@@ -36,7 +36,7 @@
               required
             />
           </b-form-group>
-          <b-form-group class="col">
+          <b-form-group class="col-sm">
             <b-form-input
               type="text"
               placeholder="Telefonnummer"
@@ -48,7 +48,7 @@
           </b-form-group>
         </b-row>
         <b-row>
-          <b-form-group class="col">
+          <b-form-group class="col-sm">
             <b-form-textarea
               placeholder="Ihre Nachricht"
               rows="5"
@@ -81,7 +81,7 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-form-group class="col text-left">
+          <b-form-group class="col-sm">
             <vue-recaptcha
               ref="recaptcha"
               :sitekey="sitekey"
@@ -89,7 +89,7 @@
               @verify="onVerify"
             />
           </b-form-group>
-          <b-form-group class="col text-right">
+          <b-form-group class="col-sm text-sm-right">
             <b-button type="submit" variant="secondary">Senden</b-button>
           </b-form-group>
         </b-row>
